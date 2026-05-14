@@ -6,7 +6,7 @@ import { supabase } from '@/lib/supabase';
 import type { Coupon, Shop } from '@/lib/supabase';
 
 const TEXT = {
-  warningLine1: '\u26a0 \u30b9\u30bf\u30c3\u30e5\u30f5\u3068\u783a\u8a8d\u306e\u4e0a',
+  warningLine1: '\u26a0 \u30b9\u30bf\u30c3\u30d5\u3068\u78ba\u8a8d\u306e\u4e0a',
   warningLine2: '\u30bf\u30c3\u30d7\u3092\u304a\u9858\u3044\u3057\u307e\u3059',
   useButton: '\u4f7f\u7528\u6e08\u307f\u306b\u3059\u308b',
   used: '\u4f7f\u7528\u6e08\u307f',
