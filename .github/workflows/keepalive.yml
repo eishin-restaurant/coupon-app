@@ -1,0 +1,14 @@
+name: Keep Supabase Alive
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping eishin-coupon page (triggers Supabase touch)
+        run: |
+          curl -sSL -o /dev/null -w "HTTP %{http_code}\n" https://coupon-app-inky.vercel.app/eishin
